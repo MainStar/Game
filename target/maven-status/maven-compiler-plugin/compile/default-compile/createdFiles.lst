@@ -1,5 +1,8 @@
-GameServer/Servlets/ServletLogin.class
-GameServer/Servlets/ServletCheck.class
-GameServer/Dao/UsersDao.class
-GameServer/Servlets/ServletRegistration.class
-GameServer/DataBase/DataBase.class
+GameWeb/Servlets/ServletLogin.class
+GameWeb/Servlets/ServletCheck.class
+GameServer/Server/ServerListener.class
+GameServer/ServerAction/AutorizationRegistration.class
+Dao/Users/UsersDao.class
+GameWeb/Servlets/ServletRegistration.class
+Dao/DataBase/DataBase.class
+GameServer/Server/Server.class

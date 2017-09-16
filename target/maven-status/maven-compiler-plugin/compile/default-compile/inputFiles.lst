@@ -1,5 +1,8 @@
-/home/mainstar/Idea Projects/Game/src/main/java/GameServer/Dao/UsersDao.java
-/home/mainstar/Idea Projects/Game/src/main/java/GameServer/Servlets/ServletCheck.java
-/home/mainstar/Idea Projects/Game/src/main/java/GameServer/Servlets/ServletLogin.java
-/home/mainstar/Idea Projects/Game/src/main/java/GameServer/Servlets/ServletRegistration.java
-/home/mainstar/Idea Projects/Game/src/main/java/GameServer/DataBase/DataBase.java
+/home/mainstar/Idea Projects/Game/src/main/java/Dao/Users/UsersDao.java
+/home/mainstar/Idea Projects/Game/src/main/java/GameServer/Server/Server.java
+/home/mainstar/Idea Projects/Game/src/main/java/GameServer/Server/ServerListener.java
+/home/mainstar/Idea Projects/Game/src/main/java/GameWeb/Servlets/ServletLogin.java
+/home/mainstar/Idea Projects/Game/src/main/java/GameWeb/Servlets/ServletRegistration.java
+/home/mainstar/Idea Projects/Game/src/main/java/GameWeb/Servlets/ServletCheck.java
+/home/mainstar/Idea Projects/Game/src/main/java/Dao/DataBase/DataBase.java
+/home/mainstar/Idea Projects/Game/src/main/java/GameServer/ServerAction/AutorizationRegistration.java
