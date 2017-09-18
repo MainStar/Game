@@ -13,9 +13,15 @@ import java.io.IOException;
 public class ServletLogin extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("WEB-INF/pages/pageLogin.html").forward(req, resp);
 
-        Server server = new Server();
-        server.start();
+        if (req.getParameter("username") == null && req.getParameter("password") == null){
+            req.getRequestDispatcher("WEB-INF/pages/pageLogin.html").forward(req, resp);
+        }else {
+            resp.getWriter().append("User name: " + req.getParameter("username") + "\nPassword: "
+                    + req.getParameter("password"));
+        }
+
+//        Server server = new Server();
+//        server.start();
     }
 }

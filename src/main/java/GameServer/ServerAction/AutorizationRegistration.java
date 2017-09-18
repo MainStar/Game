@@ -6,6 +6,10 @@ import Dao.Users.UsersDao;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Данный клас отвечает за проверку авторизации, и отвечает за
+ * регистрацию.*/
+
 public class AutorizationRegistration {
 
     DataBase dataBase = new DataBase();
@@ -14,7 +18,7 @@ public class AutorizationRegistration {
 
         dataBase.connectDataBase();
         List<UsersDao> daoList = dataBase.writeTableUsers(usersList);
-        dataBase.closeDB();
+//        dataBase.closeDB();
 
         return check(usersList, daoList);
     }
@@ -23,12 +27,14 @@ public class AutorizationRegistration {
 
         dataBase.connectDataBase();
         List<UsersDao> daoList = dataBase.readTableUsers();
-        dataBase.closeDB();
+//        dataBase.closeDB();
 
         return check(usersList, daoList);
 
     }
 
+    /** Метод проверки вынесен за пределы методов авторизации и регистрации
+     * что бы не было дублирования кода.*/
     public String check(List<UsersDao> usersList, List<UsersDao> daoList){
 
 
