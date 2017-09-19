@@ -1,6 +1,5 @@
 package GameWeb.Servlets;
 
-import GameServer.Server.Server;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

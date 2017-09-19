@@ -58,7 +58,7 @@ public class DataBase {
 
     public List<UsersDao> writeTableUsers(List<UsersDao> usersList) throws SQLException {
 
-        preparedStmt = con.prepareStatement("insert into 'users' (id, usernmae, password) VALUES (?, ?, ?)");
+        preparedStmt = con.prepareStatement("insert into users (id, username, password) VALUES (?, ?, ?)");
 
         for (UsersDao el : usersList) {
             preparedStmt.setInt(1, el.getId());
